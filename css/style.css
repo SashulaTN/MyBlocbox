@@ -26,7 +26,7 @@ html, body{
    margin-left: auto;
    padding-left: 15px;
    padding-right: 15px;
-   position: relative;
+   position:relative;
  }
  .container:before,
  .container:after {
@@ -68,7 +68,7 @@ html, body{
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34495e', endColorstr='#0f6f7e', GradientType=0 );
  }
  header nav {
-   padding:1em 0;
+   padding: 1em 0;
  }
  header nav ul {
    display: block;
@@ -79,10 +79,9 @@ html, body{
  header nav ul > li {
    list-style-type: none;
    display: block;
-   margin:0 15px;
  }
  header nav ul > li.btn-outline {
-   padding:10px 15px;
+   padding: 15px 15px;
    border:2px solid #FFFFFF;
    border-radius: 4px;
  }
@@ -118,7 +117,7 @@ html, body{
    margin:0 15px;
  }
  header nav ul > li.btn-outline {
-   padding:10px 15px;
+   padding: 10px 15px;
    border:2px solid #FFFFFF;
    border-radius: 4px;
  }
@@ -148,10 +147,11 @@ header .hero {
    font-weight: 100;
    margin:10px 0 40px;
  }
- header .hero img {
-   display: block;
-   margin: 1em auto 0;
- }
+header .hero img{
+        height:auto;
+        width:100%;
+    padding-top: 20px;
+    }
  /* BUTTONS */
  .btn {
    border-radius: 4px;
@@ -349,7 +349,7 @@ header .hero {
    background-color: transparent;
  }
 footer .logo {
-    padding: 1em 0;
+    padding: 0;
   margin: 0 auto;
   display: block;
 }
@@ -360,7 +360,7 @@ footer .logo {
      width: 750px;
    }
    .one-half {
-     width:46%;
+     width:95%;
    }
    .one-third {
      width:29.33333%;
@@ -372,20 +372,33 @@ footer .logo {
       display:inline-block;
    }
    header nav ul {
-      display:inline;
+      display: inline-block;
       text-align: right;
       float:right;
-      margin:0;
     }
     header nav ul > li {
       list-style-type: none;
       display: inline-block;
       margin:0 15px;
     }
+    header .hero img {
+    width: 100%;
+ }
+    .testimonials .one-fourth {
+      width:46%;
+     }
+    .testimonials .alternate {
+      margin-top:0px;
+     }
  }
 
-
  @media (min-width: 992px){
+     .container {
+     width: 970px;
+   }
+     .one-fourth {
+     width:21%;
+   }  
    footer{
      background-color: #0e8697;
      background-image: linear-gradient(to left,
@@ -411,54 +424,12 @@ footer .logo {
      width:auto;
    }
  }
- @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-    .one-half {
-      width: 46%;
-    }
-    .one-third {
-      width: 29.33333%;
-    }
-    .one-fourth {
-        width: 21%;
-     }
-     .testimonials .one-fourth {
-      width:46%;
-     }
-     .testimonials .alternate {
-      margin-top:0px;
-     }
-    header .site-logo {
-      display:inline-block;
-    }
-    header nav ul {
-      display: inline;
-      text-align: right;
-      float: right;
-      margin: 0;
-    }
-    header nav ul > li {
-      list-style-type: none;
-      display: inline-block;
-      margin: 0 15px;
-    }
-  }
- @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-fourth {
-     width:21%;
-   }
- }
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
    }
  }
-  @media (min-width: 768px){
+@media (min-width: 768px){
    footer{
      background-color: #0e8697;
      background-image: linear-gradient(to left,
@@ -483,4 +454,3 @@ max-width: 100%;
 height: auto;
 display: block;
 }
-

@@ -389,16 +389,25 @@ header .hero {
    color:#FFFFFF;
    text-decoration: none;
  }
- footer .right-footer-block {
-   background-color: transparent;
- }
 footer .logo {
     padding: 2em;
   margin: auto;
   display: block;
     width: 65%;
 }
+footer .one-third {
+  width:96%;
+  min-height: 1px;
+  margin: 0 2% 0px;
+}
+@media (min-width: 768px) {
 
+  footer .one-third {
+    width:96%;
+    min-height: 1px;
+    margin: 0 2% 0px;
+  }
+}
 
  @media (min-width: 992px){
    footer{
@@ -407,16 +416,23 @@ footer .logo {
         #0e8697 0%, #0e8697 33.33337%, #34495e 33.33337%, #34495e 100%);
      height: 100px;
    }
-   footer p, footer nav ul{
+  footer .one-third {
+    width:29.33333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    margin: 0 2% 20px;
+  }
+  footer p, footer nav ul{
      padding: 2em 0;
      text-align: left;
    }
    footer .right-footer-block {
-     background-color: #0e8697;
+     background-color: #3498DB;
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
-
+     width:auto;
    }
  }
 

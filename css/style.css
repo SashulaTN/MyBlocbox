@@ -417,6 +417,61 @@ footer .one-third {
      width:auto;
    }
  }
+ @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+    .one-half {
+      width: 46%;
+    }
+    .one-third {
+      width: 29.33333%;
+    }
+    .one-fourth {
+        width: 21%;
+     }
+     .testimonials .one-fourth {
+      width:46%;
+     }
+     .testimonials .alternate {
+      margin-top:0px;
+     }
+    header .site-logo {
+      display:inline-block;
+    }
+    header nav ul {
+      display: inline;
+      text-align: right;
+      float: right;
+      margin: 0;
+    }
+    header nav ul > li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+    .testimonials .one-fourth {
+      width:21%;
+    }
+    .testimonials ul li.alternate {
+      margin-top:20px;
+    }
+   }
+   @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @media (min-width: 1920px) {
+    .container {
+      width: 1800px;
+    }
+  }
 
 
 

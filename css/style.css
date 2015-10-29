@@ -385,7 +385,7 @@ footer .one-third {
 @media (min-width: 768px) {
 
   footer .one-third {
-    width: 96%;
+    width: auto;
     min-height: 1px;
     margin: 0 2% 0px;
   }

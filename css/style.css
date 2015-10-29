@@ -476,5 +476,11 @@ footer .logo {
      padding: 2em 0 2em 1.5em;
    }
 }
+/* Scale image in the Hero section */
 
+header .hero img {
+max-width: 100%; 
+height: auto;
+display: block;
+}
 
